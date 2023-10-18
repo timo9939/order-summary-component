@@ -10,6 +10,7 @@
 
   :root {
     --btnText-color: white;
+    --Pale-blue: hsl(225, 100%, 94%)
   }
 
 body{
@@ -22,14 +23,14 @@ main{
     
     background-color:hsl(225, 100%, 98%);
   
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 1em;
 
 
     width: 30vw;
     height: 80vh;
     left: 35%;
-top: 10%;
+top: 5vh;
 
     display: flex;
     flex-direction: column;
@@ -48,30 +49,36 @@ border-radius: 1em 1em 0 0;
 /* Lower part section */
 section{
     padding: 1em 3em;
-    border: 1px solid black;
-    height: 100%;
+    /* border: 1px solid black; */
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+
 
 }
 
-section>img{
-/* padding-right: 2em; */
-}
 
+/* Annual Plan Rows */
 section>div{
     width: 100%;
-    background-color:hsl(224, 23%, 55%);
+    background-color:var(--Pale-blue);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
-    padding: 1em 2em;
+    padding: 0.3em 2em;
 
     border-radius: 1em;
 
+}
+
+section p{
+    text-align: center;
+    color:gray ;
 }
 
 
@@ -89,9 +96,19 @@ section>div h3 h4{
     border-radius: 0.5em;
 
     color: var(--btnText-color);
+    cursor: pointer;
 
 }
 
 #btn2{
-    /* margin-top:0em ; */
+   background-color: white;
+   color: gray;
+
+   margin-top: 1em;
+   cursor: pointer;
+}
+
+#btn1:hover{
+    background-color: rgba(137, 43, 226, 0.772);
+    box-shadow: -1em 1em 10px rgba(137, 43, 226, 0.189);
 }
